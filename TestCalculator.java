@@ -1,11 +1,18 @@
 package junitIntro;
 
 import org.junit.After;
+import org.junit.AfterClass;
 import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class TestCalculator {
     Calculator c=new Calculator();
+    
+    @BeforeClass
+    public void showAll() {
+    	System.out.println("Proccessing..:)");
+    }
     
     @Before
     public void showB() {
@@ -32,5 +39,10 @@ public class TestCalculator {
     @After
     public void ShowA() {
     	System.out.println("thank you!");
+    }
+    
+    @AfterClass
+    public void showLess() {
+    	System.out.println("finished...!");
     }
 }
