@@ -34,7 +34,7 @@ public class AssertClassProgram {
 	}
 	@Test
 	public void testBoolean() {
-		String x="hello";
+		String x="hello world";
 		String y="hello";
 		assertTrue(x.equals(y));
 	}
