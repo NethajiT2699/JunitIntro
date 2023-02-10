@@ -5,14 +5,15 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.jupiter.api.Disabled;
 
 public class TestCalculator {
     Calculator c=new Calculator();
     
-    @BeforeClass
-    public void showAll() {
-    	System.out.println("Proccessing..:)");
-    }
+//    @BeforeClass
+//    public void showAll() {
+//    	System.out.println("Proccessing..:)");
+//    }
     
     @Before
     public void showB() {
@@ -20,6 +21,7 @@ public class TestCalculator {
     }
     
     @Test
+    @Disabled
     public void test() {
       System.out.println(c.addition(12, 12)); 	
     }
@@ -41,8 +43,8 @@ public class TestCalculator {
     	System.out.println("thank you!");
     }
     
-    @AfterClass
-    public void showLess() {
-    	System.out.println("finished...!");
-    }
+//    @AfterClass
+//    public void showLess() {
+//    	System.out.println("finished...!");
+//    }
 }
